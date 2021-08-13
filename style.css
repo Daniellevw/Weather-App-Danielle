@@ -1,0 +1,83 @@
+body {
+  background-image: url("../images/trees.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.weather-app {
+  max-width: 600px;
+  border: 1px solid;
+  padding: 15px;
+  border-radius: 4px;
+  padding-top: 60px;
+  background-color: #cbdfdd;
+  display: block;
+  margin: 100px auto;
+  box-shadow: 7px 7px 2px;
+}
+.entire-row {
+  padding: 0;
+}
+.btn {
+  position: relative;
+  bottom: -3px;
+  color: #292c2f;
+  border: 0.5px solid;
+  border-color: #9cbab8;
+}
+.btn:hover {
+  background: #afc3c1;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  color: #292c2f;
+  border: 0.5px solid;
+  border-color: #9cbab8;
+}
+
+h1,
+h3 {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+}
+h3 {
+  font-size: 18px;
+}
+p {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+.variables-values-wrapper {
+  text-align: center;
+}
+
+.variables-values-1,
+.variables-values-2 {
+  text-align: left;
+}
+
+.variables-values-1 {
+  font-weight: bolder;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+}
+
+.forecast-summary {
+  border: 1px solid;
+  border-radius: 10%;
+  box-shadow: 4px 4px 2px;
+  text-align: center;
+}
+.forecast-date {
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Rain or Shine</title>
+    <script
+      src="https://kit.fontawesome.com/0ad6b40bfc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="weather-app">
+     <div class="entire-row">
+          <form class="search-form" id="search-form-city">
+            <div class="row justify-content-center">
+              <div class="col-5">
+              <input
+                type="search"
+                placeholder="Enter your city here"
+                autofocus="off"
+                class="form-control shadow-sm border-0"
+                id = "city-input" 
+              />
+              </div>
+            <div class="col-3">
+            <input type="submit" value="Search" class="form-control btn btn-light btn-sm shadow-sm" />
+             </div>
+              <div class="col-1"><button class = "btn btn-light" id="current-location-button">📍</button></div>
+        </div>
+        </div>
+          </form>
+        <br />
+        <h1 id="city"></h1>
+        <h3 id="day-time"></h3>
+        <p id="description"><img src="images/sun-sea.png" alt="current-weather" /></p>
+
+        <div class="variables-values-wrapper">
+          <div class="row">
+            <div class="col-6">
+              <ul class="variables-values-1">
+                <li>Temperature °C | <a href="#">°F</a></li>
+                <li>Humidity</li>
+                <li>Wind</li>
+              </ul>
+            </div>
+
+            <div class="col-6">
+              <ul class="variables-values-2">
+                <li><span id="temperature"></span> °C</li>
+                <li><span id="humidity"></span> %</li>
+                <li><span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <br />
+        <div class="forecast">
+          <div class="row">
+            <div class="col-2">
+              <div class="forecast-summary">
+                <div class="forecast-date">Mon</div>
+                <i class="fas fa-sun"></i>
+                <div class="temperature">18 °C</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="forecast-summary">
+                <div class="forecast-date">Tues</div>
+                <i class="fas fa-sun"></i>
+                <div class="temperature">18 °C</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="forecast-summary">
+                <div class="forecast-date">Wed</div>
+                <i class="fas fa-cloud-rain"></i>
+                <div class="temperature">12 °C</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="forecast-summary">
+                <div class="forecast-date">Thurs</div>
+                <i class="fas fa-cloud-rain"></i>
+                <div class="temperature">14 °C</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="forecast-summary">
+                <div class="forecast-date">Fri</div>
+                <i class="fas fa-cloud-rain"></i>
+                <div class="temperature">18 °C</div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="forecast-summary">
+                <div class="forecast-date">Sat</div>
+                <i class="fas fa-cloud-rain"></i>
+                <div class="temperature">18 °C</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
