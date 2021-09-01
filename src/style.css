@@ -86,18 +86,8 @@ ul {
   color: #072f1c;
 }
 
-.variables-values-1 .active {
-  color: black;
-  cursor: default;
-  text-decoration: none;
-}
-
-.variables-values-1 .active:hover {
-  text-decoration: none;
-  cursor: default;
-}
-
 .variables-values-1 a {
+  color: black;
   text-decoration: none;
   cursor: default;
 }
