@@ -29,10 +29,14 @@ function displayWeatherCondition(response) {
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+  document.querySelector("#icon").innerHTML = response.data.weather[0].main;
 
   celsiusTemperature = response.data.main.temp;
+
+  iconElement.setAttribute(
+    "src",
+    "http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png"
+  );
 }
 
 function searchCity(city) {
