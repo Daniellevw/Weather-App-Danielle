@@ -20,6 +20,8 @@ let currentTime = new Date();
 dateElement.innerHTML = formatDate(currentTime);
 
 function displayWeatherCondition(response) {
+  celsiusTemperature = response.data.main.temp;
+
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML =
     Math.round(celsiusTemperature);
@@ -31,8 +33,7 @@ function displayWeatherCondition(response) {
   );
   document.querySelector("#icon").innerHTML = response.data.weather[0].main;
 
-  celsiusTemperature = response.data.main.temp;
-
+  let iconElement = document.querySelector("#icon");
   iconElement.setAttribute(
     "src",
     "http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png"
