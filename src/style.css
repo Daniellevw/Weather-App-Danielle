@@ -86,6 +86,8 @@ ul {
 
 .open-source-code {
   color: #31353b;
+  font-size: 12px;
+  font-family: monospace;
 }
 
 .variables-values-1 a {
