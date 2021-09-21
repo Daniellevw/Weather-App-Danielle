@@ -1,5 +1,5 @@
 body {
-  background-image: url("../images/trees.JPG");
+  background-image: url("../images/Palm6.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.9;
@@ -10,10 +10,10 @@ body {
   border: 1px solid;
   padding: 15px;
   border-radius: 4px;
-  padding-top: 60px;
-  background-color: #cbdfdd;
+  padding-top: 50px;
+  background-color: #f9b1ba;
   display: block;
-  margin: 100px auto;
+  margin: 60px auto;
   box-shadow: 7px 7px 2px;
 }
 .entire-row {
@@ -24,17 +24,18 @@ body {
   bottom: -3px;
   color: #292c2f;
   border: 0.5px solid;
-  border-color: #9cbab8;
+  border-color: #fecfd4;
+  font-size: 12px;
 }
 .btn:hover {
-  background: #afc3c1;
+  background: #ffdddf;
 }
 button {
   display: block;
   margin: 0 auto;
   color: #292c2f;
   border: 0.5px solid;
-  border-color: #9cbab8;
+  border-color: #fecfd4;
 }
 
 h1,
@@ -68,7 +69,7 @@ ul {
   margin: 0;
   padding: 0;
   display: inline-block;
-  font-family: "Montserrat", sans-serif;
+  font-family: monospace;
 }
 
 .forecast-summary {
@@ -80,6 +81,7 @@ ul {
 .forecast-date {
   font-family: "Orbitron", sans-serif;
   font-weight: 600;
+  font-size: 13px;
 }
 
 .open-source-code {
